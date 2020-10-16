@@ -1,0 +1,10 @@
+version: '3.1'
+services:
+  server-static:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: server-static
+    restart: always
+    ports:
+      - 8045:80

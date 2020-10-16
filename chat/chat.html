@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="stylesheet" href="chat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.0/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="chat.js"></script>
+</head>
+<body>
+<body>
+<noscript>
+    <h2 style="color: #ff0000">
+        Seems your browser doesn't support Javascript! Websocket relies on Javascript being
+        enabled. Please enable
+        Javascript and reload this page!
+    </h2>
+</noscript>
+<div>
+    <div>
+        <label>What is your name?</label>
+        <br>
+        <input type="text" id="name"/>
+        <br>
+        <button id="connect" onclick="connect();">Connect</button>
+        <button id="disconnect" disabled="disabled" onclick="disconnect();">Disconnect</button>
+    </div>
+    <div id="conversationDiv">
+        <hr>
+        Chat
+        <hr>
+        <p id="response"></p>
+        <hr>
+        <input type="text" id="message">
+        <button id="sendName" onclick="sendMessage();">Send</button>
+    </div>
+</div>
+</body>
+</body>
+</html>
