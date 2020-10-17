@@ -28,11 +28,11 @@
                     <img src="logo.png" alt="" class="logo__img">
                     <div class="logo__title">Junior hackers <span class="logo__title__chat">chat</span> </div>
                 </div>
-                <div class="menu">
+                <div class="menu row">
                     <div class="menu__item"><a href="" class="menu__link">Главная</a></div>
                     <div class="menu__item"><a href="" class="menu__link">О проэкте</a></div>
                     <div class="menu__item"><a href="" class="menu__link">Наши преподователи</a></div>
-                    <div id="conversationDivStop"><button id="disconnect" disabled="disabled" onclick="disconnect();">Завершить сеанс</button></div>
+                    <div class="ml-2" id="conversationDivStop"><button class="btn btn-danger" id="disconnect" disabled="disabled" onclick="disconnect();">Завершить сеанс</button></div>
                 </div>
                 
                
@@ -44,21 +44,25 @@
 <div class="container">
     <div id="conversationDivStart">
 
-        <h3>Добро пожаловать в систему коммуникации студентов и преподавателей!</h2>
-        <p>Для начала общения введите Ваше имя</p>
-         <div class="">     
-            <input class="form-name" type="text" id="name" placeholder="Имя..."/>
-            <button id="connect" onclick="connect();">Начать общение</button>
-        </div>  
+        <h3 class="display-4 text-center mb">Добро пожаловать в систему коммуникации студентов и преподавателей!</h2>
+        <p class="text-center mt-2">Для начала общения введите Ваше имя</p>
+         <div class="w-100 form-group mb-2">     
+            <div><input class="form-control" type="text" id="name" placeholder="Ваше имя..."/><br></div>
+            <button class="btn btn-primary mb-2" id="connect" onclick="connect();">Начать общение</button>
+        </div>
+
+
+
+
     </div>
     <div id="conversationDiv">
-        <h3 id="userName">
-        Приветсвую в системе комуникации. Все интересующие Вас вопросы можете задать ниже</h3>
+        <h3 id="userName" class="display-4 text-center mb">
+        Добро пожаловать. Все интересующие Вас вопросы можете задать ниже</h3>
         
-        <div id="response"></div>
+        <div id="response" class="form-group mb-2"></div>
        
-        <input type="text" id="message" placeholder="Введите сообщение ...">
-        <button id="sendName" onclick="sendMessage();">Отправить</button>
+        <div><input class="form-control w-100" type="text" id="message" placeholder="Введите сообщение ..."><br></div>
+        <div class="text-right"><button class="btn btn-success mb-2" id="sendName" onclick="sendMessage();">Отправить</button></div>
     </div>
 </div>
 <footer>
