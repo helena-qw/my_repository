@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto-Light.eot');
+    src: url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Light.woff') format('woff'),
+    url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+    
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Regular.woff') format('woff'),
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}      
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto-Medium.eot');
+    src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Roboto-Medium.woff') format('woff'),
+    url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url('Montserrat-ExtraBold.eot');
+    src: url('Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('Montserrat-ExtraBold.woff') format('woff'),
+    url('Montserrat-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#conversationDiv {
+    visibility: hidden;
+}
+#conversationDivStop{
+    /* visibility: hidden; */
+    display: none;
+}
+ 
+#message{
+    width: 50%;
+}
+
+/*CHAT*/
+.chat{
+    display: grid;
+  place-items: center;
+    margin-top: 100px;
+    margin-left: 290px;
+    max-width: 1100px;
+
+}
+.chat__title{
+    font-family: 'Roboto Bold';
+    color:#012a91;
+    margin: 20px 0;
+    text-align: center;
+}
+.caht__subtitle{
+    font-family: 'Roboto Light';
+    color:#aaaaaa;
+    margin: 20px 0;
+    text-align: center;
+}
+.form-name{
+    width: 300px;
+    padding: 7px 10px;
+    border: 1px solid #80a4ff;
+    border-radius: 5px;
+}
+.chat__question{
+    display: flex;
+    justify-content: space-between;    
+}

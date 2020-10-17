@@ -106,6 +106,11 @@
     align-items: center;
     margin-left: 50px;
 }
+.profile-user{
+    display: flex;
+    align-items: center;
+    margin-left: 65%;
+}
 .profile__item{
     margin-left: 10px;
 }
@@ -218,4 +223,12 @@ margin-left: 5px;
     font-size: 20px;
     font-weight: 300;
     color: #8492af;
+}
+/*USER*/
+.nav-user{
+    position: fixed;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background-color: #0043df;
 }
