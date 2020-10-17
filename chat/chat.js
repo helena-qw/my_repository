@@ -1,4 +1,4 @@
-const API_URL = 'http://195.250.62.211:8030';
+const API_URL = 'http://88.198.13.85:8060/';
 var stompClient = null;
 
 function getSessionId() {
