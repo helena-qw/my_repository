@@ -1,3 +1,15 @@
 #conversationDiv {
     visibility: hidden;
 }
+#conversationDivStop{
+    /* visibility: hidden; */
+    display: none;
+}
+ 
+#message{
+    width: 50%;
+}
+
+.form-name{
+    width: 50%;
+}
