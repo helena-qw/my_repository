@@ -10,7 +10,11 @@ function setConnected(connected) {
     document.getElementById('disconnect').disabled = !connected;
     document.getElementById('name').disabled = connected;
     document.getElementById('conversationDiv').style.visibility = connected ? 'visible' : 'hidden';
+    document.getElementById('conversationDivStop').style.display = connected ? 'block' : 'none';
+    document.getElementById('conversationDivStart').style.display = connected ? 'none' : 'block';
+    
     document.getElementById('response').innerHTML = '';
+
 }
 
 function connect() {
@@ -45,6 +49,10 @@ function showMessage(message) {
     const response = document.getElementById('response');
     const p = document.createElement('p');
     p.style.wordWrap = 'break-word';
-    p.innerHTML = `<strong>${message.from}</strong> <i>${new Date().toLocaleTimeString()}</i><br>${message.payload}`;
+    p.innerHTML = `<hr> <br> <strong>${message.from}</strong> <i>${new Date().toLocaleTimeString()}</i><br>${message.payload}`;
     response.appendChild(p);
 }
+
+
+ 
+
