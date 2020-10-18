@@ -59,7 +59,7 @@
 
 .container{
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 100%;
 }
 .header{
     display: flex;
@@ -77,7 +77,7 @@
 .add-task{
     display: flex;
     align-items: center;
-    margin-left: 550px;
+    margin-left: 40%;
 }
 .add__item{
     margin-left: 10px;
@@ -186,7 +186,7 @@ margin-left: 5px;
 /*STATISTICS*/
 .statistics{
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 280px;
 }
 .statistics__h1{
@@ -203,14 +203,14 @@ margin-left: 5px;
     width: 100%;
 }
 .statistics__item{
+    flex: 1 1 45%;
+    margin: 20px 20px;
     min-height: 200px;
-    margin: 10px 10px;
-    width: 40%;
     background-color: #eeeeee;
     border: 1px solid #80a4ff;
 }
 .statistics__item:first-child{
-    width: 70%;
+    flex: 1 1 70%;
     text-align: center;
     font-family: 'Roboto';
     font-size: 20px;
@@ -232,3 +232,108 @@ margin-left: 5px;
     height: 100vh;
     background-color: #0043df;
 }
+
+/*MEDIA*/
+@media (max-width: 1400px){
+    .add-task{
+        margin-left: 30%;
+    }
+}
+@media (max-width: 1200px){
+    .add-task{
+        margin-left: 20%;
+    }
+}
+@media (max-width: 1050px){
+    .add-task{
+        margin-left: 10%;
+    }
+}
+@media (max-width: 950px){
+    .add-task{
+        margin-left: 30px;
+    }
+    .profile {
+        margin-left: 0px;
+    }
+}    
+@media (max-width: 820px){
+    .nav {
+        width: 250px;
+    }
+    .top__menu{
+        margin-left: 250px;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    .nav__link{
+        padding-left: 10px;
+    }
+    .add-task {
+        margin-left: 0px;
+    }
+    .statistics-board {
+        width: 95%;
+    }
+}
+@media (max-width: 780px){
+    .nav {
+        width: 210px;
+    }
+    .top__menu {
+        margin-left: 210px;
+    }
+    .statistics {
+        margin-left: 200px;
+    }
+    .statistics-board {
+        width: 100%;
+    }
+    .logo {
+        display: block;
+    }
+}
+@media (max-width: 720px){
+    .nav {
+       display: none;
+    }
+    .top__menu {
+        margin-left: 0;
+    }
+    .chat {
+        margin-left: 0px;
+    }
+    .statistics {
+        margin-left: 0px;
+    }
+    .chat__btn {
+        margin-left: 10px;
+    }
+    /*.mobile-menu {
+        display: block;
+    }*/
+}
+@media (max-width: 500px){
+    .add__btn{
+        font-size: 15px;
+        padding: 5px 3px;
+    }
+    .form-name {
+        width: 250px;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 430px){
+    .profile__item {
+        margin-left: 6px;
+    }
+    .add__btn {
+        font-size: 10px;
+    }
+    .profile__img {
+        width: 36px;
+        border-radius: 30px;
+        margin-left: 1px;
+    }
+}    

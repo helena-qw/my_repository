@@ -59,14 +59,24 @@
 
 #conversationDiv {
     visibility: hidden;
+    /*height: 330px;*/
 }
 #conversationDivStop{
-    /* visibility: hidden; */
     display: none;
 }
  
 #message{
     width: 50%;
+}
+
+#response{
+    flex: 1 1 45%;
+    margin: 20px 20px;
+    height: 200px;
+    background: #eeeeee; 
+    border: 1px solid #80a4ff;
+    overflow-y: scroll; 
+    margin: 20px 10px;
 }
 
 /*CHAT*/
@@ -81,13 +91,13 @@
 .chat__title{
     font-family: 'Roboto Bold';
     color:#012a91;
-    margin: 20px 0;
+    margin: 40px 0;
     text-align: center;
 }
 .caht__subtitle{
     font-family: 'Roboto Light';
     color:#aaaaaa;
-    margin: 20px 0;
+    margin: 40px 0;
     text-align: center;
 }
 .form-name{
@@ -100,3 +110,77 @@
     display: flex;
     justify-content: space-between;    
 }
+.chat__btn{
+    font-family: 'Roboto Light';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    background-color: #00a77d;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+.chat__btn:hover{
+    color: #027046;
+    transition: 0.5s;
+}
+.chat__btn:active{
+    background-color: rgb(255, 112, 112);
+    transform: translateY(2px);
+}
+
+/*MEDIA*/
+@media (max-width: 950px){
+    #message {
+        width: 40%;
+    }
+    .chat__question {
+        justify-content: space-around;   
+    }
+}
+@media (max-width: 820px){
+    .chat__btn{
+        padding: 5px 7px;
+    }
+    .chat__question {
+       display: block;
+    }
+    #conversationDivStop{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 780px){
+    #connect{
+        margin-top: 20px;
+    }
+    .chat {
+        margin-left: 220px;
+    }
+}
+@media (max-width: 720px){
+    .chat {
+        margin-left: 0px;
+    }
+    #message {
+        margin-left: 10px;
+    }
+}
+@media (max-width: 500px){
+    .form-name {
+        width: 250px;
+        margin-left: 20px;
+    }
+}
+@media (max-width: 300px){
+    .form-name {
+        width: 180px;
+        margin-left: 25px;
+    }
+}   
+@media (max-width: 250px){
+    #message {
+        margin: 10px 10px;
+        width: 81%;
+    }
+}    
