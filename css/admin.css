@@ -281,6 +281,9 @@ margin-left: 5px;
     .nav {
         width: 210px;
     }
+    .nav__link{
+        font-size: 18px;
+    }
     .top__menu {
         margin-left: 210px;
     }

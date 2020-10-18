@@ -12,6 +12,7 @@ function setConnected(connected) {
     document.getElementById('conversationDiv').style.visibility = connected ? 'visible' : 'hidden';
     document.getElementById('conversationDivStop').style.display = connected ? 'block' : 'none';
     document.getElementById('conversationDivStart').style.display = connected ? 'none' : 'block';
+    document.getElementById('response').style.display = !connected ? 'none' : 'block';
     
     document.getElementById('response').innerHTML = '';
 
@@ -49,7 +50,7 @@ function showMessage(message) {
     const response = document.getElementById('response');
     const p = document.createElement('p');
     p.style.wordWrap = 'break-word';
-    p.innerHTML = `<hr> <br> <strong>${message.from}</strong> <i>${new Date().toLocaleTimeString()}</i><br>${message.payload}`;
+    p.innerHTML = `<div class="chat-mess"><br> <strong class="name-mess">${message.from}</strong> <i>${new Date().toLocaleTimeString()}</i><br><div class="mess-mess">${message.payload}</div></div>`;
     response.appendChild(p);
 }
 

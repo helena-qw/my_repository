@@ -79,6 +79,10 @@
     margin: 20px 10px;
 }
 
+.chat-response{
+    display: none;
+}
+
 /*CHAT*/
 .chat{
     display: grid;
@@ -106,6 +110,19 @@
     border: 1px solid #80a4ff;
     border-radius: 5px;
 }
+
+.chat-mess{
+    margin: 20px;
+}
+.name-mess{
+    font-weight: 700;
+    font-size: 25px;
+}
+.mess-mess{
+    padding: 15px;
+    line-height: 25px;
+}
+
 .chat__question{
     display: flex;
     justify-content: space-between;    
